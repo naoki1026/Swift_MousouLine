@@ -12,6 +12,10 @@
 		B04696BF221BE50F00C7870F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04696BD221BE50F00C7870F /* Main.storyboard */; };
 		B04696C1221BE51000C7870F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04696C0221BE51000C7870F /* Assets.xcassets */; };
 		B04696C4221BE51000C7870F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04696C2221BE51000C7870F /* LaunchScreen.storyboard */; };
+		B04696CC221BF4BB00C7870F /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04696CB221BF4BB00C7870F /* SoundViewController.swift */; };
+		B04696CF221C063E00C7870F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04696CE221C063E00C7870F /* AVFoundation.framework */; };
+		B04696D3221C168500C7870F /* callMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B04696D2221C168500C7870F /* callMusic.mp3 */; };
+		B04696D5221CF3D300C7870F /* baby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B04696D4221CF3D300C7870F /* baby.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B04696C0221BE51000C7870F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04696C3221BE51000C7870F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04696C5221BE51000C7870F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04696CB221BF4BB00C7870F /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		B04696CE221C063E00C7870F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B04696D2221C168500C7870F /* callMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = callMusic.mp3; path = "MousouLINE資料/callMusic.mp3"; sourceTree = SOURCE_ROOT; };
+		B04696D4221CF3D300C7870F /* baby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = baby.mp3; path = "MousouLINE資料/baby.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04696CF221C063E00C7870F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				B04696B8221BE50F00C7870F /* SwiftMousouLINE */,
 				B04696B7221BE50F00C7870F /* Products */,
+				B04696CD221C063E00C7870F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +67,22 @@
 				B04696B9221BE50F00C7870F /* AppDelegate.swift */,
 				B04696BB221BE50F00C7870F /* ViewController.swift */,
 				B04696BD221BE50F00C7870F /* Main.storyboard */,
+				B04696CB221BF4BB00C7870F /* SoundViewController.swift */,
+				B04696D2221C168500C7870F /* callMusic.mp3 */,
+				B04696D4221CF3D300C7870F /* baby.mp3 */,
 				B04696C0221BE51000C7870F /* Assets.xcassets */,
 				B04696C2221BE51000C7870F /* LaunchScreen.storyboard */,
 				B04696C5221BE51000C7870F /* Info.plist */,
 			);
 			path = SwiftMousouLINE;
+			sourceTree = "<group>";
+		};
+		B04696CD221C063E00C7870F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B04696CE221C063E00C7870F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04696D3221C168500C7870F /* callMusic.mp3 in Resources */,
+				B04696D5221CF3D300C7870F /* baby.mp3 in Resources */,
 				B04696C4221BE51000C7870F /* LaunchScreen.storyboard in Resources */,
 				B04696C1221BE51000C7870F /* Assets.xcassets in Resources */,
 				B04696BF221BE50F00C7870F /* Main.storyboard in Resources */,
@@ -136,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04696BC221BE50F00C7870F /* ViewController.swift in Sources */,
+				B04696CC221BF4BB00C7870F /* SoundViewController.swift in Sources */,
 				B04696BA221BE50F00C7870F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVTF48299S;
 				INFOPLIST_FILE = SwiftMousouLINE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVTF48299S;
 				INFOPLIST_FILE = SwiftMousouLINE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
